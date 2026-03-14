@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Tenor+Sans&display=swap');
+
+@theme {
+  --color-gold: #C5A367;
+  --color-dark: #0A0A0A;
+  --color-dark-soft: #141414;
+  
+  --font-display: "Tenor Sans", serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+
+  --animate-reveal-up: reveal-up 0.8s ease-out;
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:root {
+  background-color: #0A0A0A;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.font-display {
+  font-family: "Tenor Sans", serif;
+}
+
+.text-gold {
+  color: #C5A367;
+}
+
+.bg-gold {
+  background-color: #C5A367;
+}
+
+.border-gold {
+  border-color: #C5A367;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.animate-reveal-up {
+  animation: var(--animate-reveal-up);
+}
